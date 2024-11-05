@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* h2{
+    background-image: url('Company\ logo.jpeg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 150px; 
+    padding-top: 70px;
+} */
+
+.image{
+    height: 220px;
+    width: 20px;
+}
+.service-container{
+    padding: 20px;
+    background-color: lightblue;
+    transition: background-color 0.3s, transform 0.3s;
+    
+}
+.service-container:hover{
+    background-color: #ffdd99; /* Change background color on hover */
+    transform: scale(1.05);
+}
+.hover-button {
+    background-color: #ff80aa; /* Initial background color */
+    color: white;              /* Initial text color */
+    border: none;              /* No border */
+    padding: 10px 20px;       /* Padding for the button */
+    font-size: 16px;          /* Font size */
+    cursor: pointer;           /* Pointer cursor on hover */
+    border-radius: 5px;       /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect */
+}
+
+/* .hover-button:hover {
+    background-color: #2980b9; 
+    color: #ff8080;            
+} */
+.hover-button:hover {
+    background-color: #2980b9;
+    color: #ff3333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+    transform: scale(1.05); /* Slightly scale up the button */
+}
+
+.services {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.service {
+    background-color: white;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    padding: 1.5rem;
+    /* box-shadow:  #ffff4d; */
+    flex: 1 1 300px; /* Allows flexible growth and sets a minimum width */
+    max-width: 350px;
+    /* box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3); */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    /* cursor: pointer; */
+
+}
+.service:hover{
+    box-shadow: 15px 15px 30px rgba(1, 1, 0, 0.8);
+}
+
+.service h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 600px) {
+    .service {
+        flex: 1 1 100%; /* Full width on small screens */
+    }
+}
